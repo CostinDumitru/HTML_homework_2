@@ -1,14 +1,3 @@
-.hover-bg-primary:hover {
-  background-color: #0d6efd !important;
-  color: white !important;
-}
-.hover-bg-primary:hover a {
-  color: white !important;
-}
-.container-fluid #hobbiesSection,
-.accordion-item {
-  background-color: blue !important;
-}
-.accordion-button.collapsed.hover-bg-primary {
-  background-color: blue !important;
+.h1s .h2s {
+  color: #ff0000;
 }

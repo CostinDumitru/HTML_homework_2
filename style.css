@@ -5,3 +5,10 @@
 .hover-bg-primary:hover a {
   color: white !important;
 }
+.container-fluid #hobbiesSection,
+.accordion-item {
+  background-color: red !important;
+}
+.accordion-button.collapsed.hover-bg-primary {
+  background-color: red !important;
+}

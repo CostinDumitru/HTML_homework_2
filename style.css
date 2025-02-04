@@ -1,3 +1,7 @@
-.h1s .h2s {
-  color: #ff0000;
+.hover-bg-primary:hover {
+  background-color: #0d6efd !important;
+  color: white !important;
+}
+.hover-bg-primary:hover a {
+  color: white !important;
 }

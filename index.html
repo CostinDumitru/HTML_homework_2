@@ -4,127 +4,264 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Blog</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 800px;
-        margin: auto;
-        padding: 20px;
-        background-color: #f4f4f4;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      ul li {
-        margin: 5px 0;
-      }
-    </style>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <h1 title="Welcome to My Blog">My personal Blog</h1>
-    </header>
+  <body class="bg-light">
+    <div class="container-fluid mt-4">
+      <!-- Blog name Section -->
+      <div class="col-lg-6 col-md-8 col-sm-10 mx-auto" style="max-width: 500px">
+        <div
+          class="card shadow-lg rounded-3 text-center bg-primary text-white p-4 mb-4"
+        >
+          <h2 class="fs-3 fw-bold">My Personal Blog</h2>
+        </div>
+      </div>
+      <!-- About Me Section -->
+      <div class="col-lg-6 col-md-8 col-sm-10 mx-auto" style="max-width: 500px">
+        <div class="card shadow-lg mb-4">
+          <div class="row g-0">
+            <div class="col-md-4 text-center p-3">
+              <img
+                width="150"
+                height="150"
+                src="profile_pic.jpg"
+                alt="My Picture"
+                class="rounded-2"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h2 class="card-title">About Me</h2>
+                <p class="card-text">
+                  Hello! My name is <strong>Dumitru Costin</strong>. I love
+                  technology, coding, and traveling. In my free time, I enjoy
+                  watching movies and building large-scale models.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <section>
-      <p class="h2">About Me</p>
-      <img
-        class="rounded-circle mt-4"
-        width="250"
-        height="250"
-        src="profile_pic.jpg"
-        alt="My Picture"
-        title="This is me!"
-      />
-      <p>
-        Hello! My name is <span id="name">Dumitru Costin</span>. I love
-        technology, coding, and traveling. In my free time, I enjoy watching
-        movies and building large scale models.
-      </p>
-    </section>
+      <!-- Hobbies Section -->
+      <div class="col-lg-6 col-md-8 col-sm-10 mx-auto" style="max-width: 500px">
+        <div class="card shadow-lg mb-4">
+          <div class="card-body">
+            <h2 class="card-title text-center">Hobbies</h2>
+            <div class="accordion" id="hobbiesAccordion">
+              <!-- Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed hover-bg-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hobby1"
+                  >
+                    Coding and building web applications
+                  </button>
+                </h2>
+                <div
+                  id="hobby1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#hobbiesAccordion"
+                >
+                  <div class="accordion-body">
+                    I love developing web applications using modern technologies
+                    like HTML, CSS, JavaScript, and frameworks.
+                  </div>
+                </div>
+              </div>
 
-    <section>
-      <h2>Hobbies</h2>
-      <p>I enjoy:</p>
-      <ul>
-        <li>Coding and building web applications</li>
-        <li>Building large scale car models like Dacia 1300 1:18</li>
-        <li>Cooking</li>
-        <li>Driving</li>
-        <li>Watching movies</li>
-      </ul>
-    </section>
+              <!-- Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed hover-bg-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hobby2"
+                  >
+                    Building large-scale car models like Dacia 1300 1:18
+                  </button>
+                </h2>
+                <div
+                  id="hobby2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#hobbiesAccordion"
+                >
+                  <div class="accordion-body">
+                    I enjoy assembling and painting highly detailed car models
+                    at a scale of 1:18.
+                    <img
+                      src="dacia1300.jpg"
+                      alt="Dacia 1300"
+                      class="rounded-2"
+                      width="425"
+                      height="mx-auto"
+                    />
+                  </div>
+                </div>
+              </div>
 
-    <section>
-      <h2>Blog Roll</h2>
-      <p>Check out my colleagues' blogs:</p>
-      <ul>
-        <li>
-          <a
-            href="https://examplecolleague1.com"
-            title="Visit Colleague 1's Blog"
-            >Colleague 1</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://examplecolleague2.com"
-            title="Visit Colleague 2's Blog"
-            >Colleague 2</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://examplecolleague3.com"
-            title="Visit Colleague 3's Blog"
-            >Colleague 3</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://examplecolleague4.com"
-            title="Visit Colleague 3's Blog"
-            >Colleague 4</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://examplecolleague5.com"
-            title="Visit Colleague 3's Blog"
-            >Colleague 5</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://examplecolleague6.com"
-            title="Visit Colleague 3's Blog"
-            >Colleague 6</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://examplecolleague7.com"
-            title="Visit Colleague 3's Blog"
-            >Colleague 7</a
-          >
-        </li>
-      </ul>
-    </section>
+              <!-- Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed hover-bg-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hobby3"
+                  >
+                    Cooking
+                  </button>
+                </h2>
+                <div
+                  id="hobby3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#hobbiesAccordion"
+                >
+                  <div class="accordion-body">
+                    Experimenting with new recipes and perfecting my favorite
+                    dishes is a big passion of mine.
+                  </div>
+                </div>
+              </div>
 
-    <footer>
-      <p>&copy; 2024 My Personal Blog. All rights reserved.</p>
+              <!-- Item 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed hover-bg-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hobby4"
+                  >
+                    Driving
+                  </button>
+                </h2>
+                <div
+                  id="hobby4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#hobbiesAccordion"
+                >
+                  <div class="accordion-body">
+                    I love going on long drives and exploring new places,
+                    enjoying the thrill of the open road.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed hover-bg-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hobby5"
+                  >
+                    Watching movies
+                  </button>
+                </h2>
+                <div
+                  id="hobby5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#hobbiesAccordion"
+                >
+                  <div class="accordion-body">
+                    I'm a huge sci-fi fan of classic and modern films.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Roll Section -->
+      <div class="col-lg-5 col-md-7 col-sm-10 mx-auto" style="max-width: 500px">
+        <div class="card shadow-lg mb-4">
+          <div class="card-body">
+            <h2 class="card-title text-center">Blog Roll</h2>
+            <ul class="list-group">
+              <li
+                class="list-group-item bg-white text-black hover-bg-primary hover-text-white"
+              >
+                <a
+                  href="https://examplecolleague1.com"
+                  class="text-black text-decoration-none d-block"
+                  >Colleague 1</a
+                >
+              </li>
+              <li
+                class="list-group-item bg-white text-black hover-bg-primary hover-text-white"
+              >
+                <a
+                  href="https://examplecolleague2.com"
+                  class="text-black text-decoration-none d-block"
+                  >Colleague 2</a
+                >
+              </li>
+              <li
+                class="list-group-item bg-white text-black hover-bg-primary hover-text-white"
+              >
+                <a
+                  href="https://examplecolleague3.com"
+                  class="text-black text-decoration-none d-block"
+                  >Colleague 3</a
+                >
+              </li>
+              <li
+                class="list-group-item bg-white text-black hover-bg-primary hover-text-white"
+              >
+                <a
+                  href="https://examplecolleague4.com"
+                  class="text-black text-decoration-none d-block"
+                  >Colleague 4</a
+                >
+              </li>
+              <li
+                class="list-group-item bg-white text-black hover-bg-primary hover-text-white"
+              >
+                <a
+                  href="https://examplecolleague5.com"
+                  class="text-black text-decoration-none d-block"
+                  >Colleague 5</a
+                >
+              </li>
+              <li
+                class="list-group-item bg-white text-black hover-bg-primary hover-text-white"
+              >
+                <a
+                  href="https://examplecolleague6.com"
+                  class="text-black text-decoration-none d-block"
+                  >Colleague 6</a
+                >
+              </li>
+              <li
+                class="list-group-item bg-white text-black hover-bg-primary hover-text-white"
+              >
+                <a
+                  href="https://examplecolleague7.com"
+                  class="text-black text-decoration-none d-block"
+                  >Colleague 7</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-primary text-center py-3">
+      &copy; 2024 My Personal Blog. All rights reserved.
     </footer>
   </body>
 </html>
